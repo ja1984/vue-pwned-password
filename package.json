@@ -1,11 +1,12 @@
 {
-  "name": "vue-pwned-password",
-  "version": "1.0.0",
+  "name": "@codejunkies/vue-pwned-password",
+  "version": "0.0.1",
   "description": "An password component for vue with ´show as text´ toggle and automatic check against haveibeenpwned databased",
   "main": "src/main.js",
   "scripts": {
     "build": "webpack -p",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "webpack -p && npm publish --access public"
   },
   "repository": {
     "type": "git",
