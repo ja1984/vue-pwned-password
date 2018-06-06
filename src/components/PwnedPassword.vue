@@ -11,7 +11,10 @@ import axios from 'axios';
 export default {
   name: 'PwnedPassword',
   props: {
-    value: String,
+    value: {
+      type: String,
+      required: true,
+    },
     placeholder: {
       type: String,
       default: '',
@@ -57,7 +60,6 @@ export default {
     },
     check() {
       if (!this.needsCheck) return;
-      if (!this.value) return;
       if (this.value.length === 0) {
         this.needsCheck = false;
         this.isCompromised = false;
