@@ -112,6 +112,7 @@ export default {
 <style>
 .pwned-password {
   position: relative;
+  display: inline-block;
 }
 
 .pwned-password-icon {
