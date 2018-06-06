@@ -31,9 +31,6 @@ pids
 *.pid
 *.seed
 
-# Package
-package-lock.json
-
 # Test
 test/unit/coverage
 test/e2e/reports
