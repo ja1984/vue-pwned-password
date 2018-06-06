@@ -57,6 +57,7 @@ export default {
     },
     check() {
       if (!this.needsCheck) return;
+      if (!this.value) return;
       if (this.value.length === 0) {
         this.needsCheck = false;
         this.isCompromised = false;
@@ -112,6 +113,7 @@ export default {
 <style>
 .pwned-password {
   position: relative;
+  display: inline-block;
 }
 
 .pwned-password-icon {
