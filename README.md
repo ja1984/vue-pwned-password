@@ -3,10 +3,13 @@
 
 ## Installation
 ```
-npm install --save vue-pwned-password
+npm install --save @codejunkies/vue-pwned-password
 -or-
-yarn add vue-pwned-password
+yarn add @codejunkies/vue-pwned-password
 ```
+
+## Demo
+You can try a small demo of the component on [CodeSandBox](https://codesandbox.io/s/8l909v1v9)
 
 ## Usage
 ```html
@@ -17,7 +20,7 @@ yarn add vue-pwned-password
 </template>
 
 <script>
-import PwnedPassword from 'vue-pwned-password';
+import PwnedPassword from '@codejunkies/vue-pwned-password';
 
 export default {
   name: 'app',
