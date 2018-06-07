@@ -1,0 +1,14 @@
+
+language: node_js
+node_js:
+  - "node"
+before_install:
+  - npm i && npm run build && npm version from-git
+deploy:
+  provider: npm
+  email: rambo3swe@gmail.com
+  api_key:
+    secure: epZt1C3dXFuvJSJgweJCoZt14tbbHDpb8AwP02SbT5TQ9kw5mJeJ4ZuMXVfZ8E6p2xhZItdQr5qRQCcwBY2a5bMlREDKUm3b4tcTdSBLwRS/W86TimFrBbXQVbHvCdqec3+YSc52UcMWpoWEM3DfoUxywqfNZtKpxpWy0XmbQngsLj0UeO+RplkjtRE0oMuzXTWxrLUX5q6H0b0os57IdNQVimzTkUe+Kvl9eTGJWlG1bXLTbTxUQK4Af39LqMuni1Q56wtOZI6ef50SfElM+yPIWrgYnYSuGhcMMjpBRjESFg6QBTbGz+CsoVAF/L6yPfN2x2sZbu8MGqmVVacpd6F7VU/j4kqIJD1ErtiUHqazK+NM4p//HeaeGwC9IlX4CDDIPrUlmY3Gytx45JS9yVcmGu7yHrjBt76HJc/kbpZC5ykokSY0i99WER8vt35Y2yMo6wRUCKOi1HouzhgNjv6YmkpwtV7ScIzCI6beN+MDgx1DaX/+vYXODEVAZxL51p3apM8LywLBWzZUtpVSKgNrTFGJFu7OqBGAGSVma87RPQqApK6nHzJKKX/HPjnwlMHxP+jrmFdUXxgdJcYU04JDXjgNW6w/WEoWrHgVn5TSrWYVXhtwBQuc7xb/QOYl4xoOWlQ1AlzQKb9dzYtixDVOTkxXgx6/U2VtMPcFR0c=
+  on:
+    tags: true
+    repo: ja1984/vue-pwned-password
