@@ -12,7 +12,7 @@ yarn add vue-pwned-password
 ```html
 <template>
   <div id="app">
-    <pwned-password v-model="password"></pwned-password>
+    <pwned-password v-model="password" @checkcomplete="checkComplete"></pwned-password>
   </div>
 </template>
 
@@ -29,6 +29,13 @@ export default {
   components: {
     PwnedPassword,
   },
+  methods: {
+    checkComplete(result) {
+      if(result.compromised) {
+        alert(`You should consider a diffrent password, this password has appeared ${result.appearances} times in password leaks.`) ;
+      }
+    }
+  }
 };
 </script>
 ```
