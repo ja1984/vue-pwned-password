@@ -1,12 +1,10 @@
 # vue-pwned-password
 [![npm version](https://badge.fury.io/js/%40codejunkies%2Fvue-pwned-password.svg)](https://badge.fury.io/js/%40codejunkies%2Fvue-pwned-password)
 
-<<<<<<< HEAD
 # vue-pwned-password
 
 Bump version
 `npm version patch -a -m "message"` && `git push --tags` && `npm run release`
-=======
 ## Installation
 ```
 npm install --save @codejunkies/vue-pwned-password
@@ -104,4 +102,3 @@ The component will add diffrent classes to itself based on the status of the ent
   border-color: #009;
 }
 ```
->>>>>>> 2ddf894be7a71039d62e363469302994c4ac4662

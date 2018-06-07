@@ -2,7 +2,7 @@
 language: node_js
 node_js:
   - "node"
-before_install:
+before_deploy:
   - npm i && npm run build && npm version from-git
 deploy:
   provider: npm
