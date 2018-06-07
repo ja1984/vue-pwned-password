@@ -63,3 +63,38 @@ The "checkcomplete" event returns two properits, one that indicates if the passw
     }
   }
 ```
+
+
+## Props
+
+| Name        | Options (default)           | Description  |
+| ------------- | ------------- | ----- |
+| trigger      | (blur), change  | Choose when to trigger a check |
+| triggerTime | Number (500)      | Only if trigger is *change*, how long to wait after last change to check password |
+| showToggle | Boolean (true)      | Show icon to toggle between password and text |
+| showPassword | Boolean (false)      | If you want to use your own toggle button (overrides "internal" toggle button) |
+
+
+## Classes
+The component will add diffrent classes to itself based on the status of the entered password.
+
+| Name         | Description  |
+| ------------ | ----- |
+| password-compromised   | The password has been checked and are compromised |
+| password-uncompromised | The password has been checked but are not compromised |
+| password-unchecked     | The password has not yet been checked |
+| password-checking      | The password is being checked agaisnt havibeenpwned database |
+
+```css
+.pwned-password.password-compromised .pwned-password-input {
+  border-color: #900;
+}
+
+.pwned-password.password-uncompromised .pwned-password-input {
+  border-color: #090;
+}
+
+.pwned-password.password-checking .pwned-password-input {
+  border-color: #009;
+}
+```
