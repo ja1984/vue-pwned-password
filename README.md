@@ -71,9 +71,9 @@ The "checkcomplete" event returns two properits, one that indicates if the passw
 | Name        | Type | Options | Default | Description  |
 | ------------- | ------------- | --- | --- | ----- |
 | trigger      | String | blur, change | blur | Choose when to trigger a check. |
-| triggerTime | Number | - | 500 |   | Only if trigger option is *change*, how long to wait after last change to check password |
-| showToggle | Boolean | true/false | true |      | Show icon to toggle between password and text |
-| showPassword | Boolean | true/false | false |      | If you want to use your own toggle button (overrides "internal" toggle button) |
+| triggerTime | Number | - | 500 | Only if trigger option is *change*, how long to wait after last change to check password |
+| showToggle | Boolean | true/false | true |      Show icon to toggle between password and text |
+| showPassword | Boolean | true/false | false |      If you want to use your own toggle button (overrides "internal" toggle button) |
 
 
 ## Classes
