@@ -6,8 +6,6 @@
 </template>
 
 <script>
-import axios from 'axios';
-
 export default {
   name: 'PwnedPassword',
   props: {
@@ -71,11 +69,11 @@ export default {
       this.sha1(this.value).then((hash) => {
         const range = hash.substring(0, 5);
         const check = hash.substring(5).toUpperCase();
-        axios.get(`https://api.pwnedpasswords.com/range/${range}`).then((response) => {
+        fetch.get(`https://api.pwnedpasswords.com/range/${range}`).then((response) => {
           this.isChecked = true;
           this.isChecking = false;
           this.needsCheck = false;
-          const compromisedPasswords = response.data.split('\n');
+          const compromisedPasswords = response.text().data.split('\n');
 
           let appearances = 0;
           let compromised = false;

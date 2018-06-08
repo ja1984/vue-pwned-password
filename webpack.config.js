@@ -1,6 +1,8 @@
 const path = require('path')
 const webpack = require('webpack')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
+var MiniCssExtractPlugin = require('mini-css-extract-plugin')
+
 
 module.exports = {
   entry: './src/main.js',
@@ -11,11 +13,15 @@ module.exports = {
       { test: /\.js$/, use: 'babel-loader' },
       // use vue-loader for .vue files
       { test: /\.vue$/, use: 'vue-loader' },
-      { test: /\.css$/, use: ['vue-style-loader', 'css-loader'] },
+      { test: /\.css$/, use: [MiniCssExtractPlugin.loader, 'css-loader'] },
     ]
   },
+  
   plugins: [
-    new VueLoaderPlugin()
+    new VueLoaderPlugin(),
+    new MiniCssExtractPlugin({
+      filename: 'vue-pwned-password.css'
+    }),
   ],
   // default for pretty much every project
   context: __dirname,
