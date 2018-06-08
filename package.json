@@ -1,6 +1,6 @@
 {
   "name": "@codejunkies/vue-pwned-password",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "An password component for vue with ´show as text´ toggle and automatic check against haveibeenpwned databased",
   "main": "dist/vue-pwned-password.js",
   "scripts": {
