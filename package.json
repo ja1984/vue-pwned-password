@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/ja1984/vue-pwned-password",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
