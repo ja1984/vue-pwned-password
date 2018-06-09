@@ -1,2 +1,5 @@
 import PwnedPassword from './components/PwnedPassword.vue';
-export default PwnedPassword;
+
+if (typeof Vue !== 'undefined') {
+  Vue.component('PwnedPassword', PwnedPassword)
+}
